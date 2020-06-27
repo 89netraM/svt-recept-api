@@ -2,7 +2,10 @@
 	"compilerOptions": {
 		"declaration": true,
 		"declarationDir": "typings",
-		"outDir": "lib"
+		"outDir": "lib",
+		"lib": [
+			"ES2015"
+		]
 	},
 	"include": [
 		"src/**/*.ts"
