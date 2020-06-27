@@ -13,6 +13,7 @@ export * from "./Recipe";
 export * from "./RecipeCategory";
 export * from "./RecipeListModel";
 export * from "./RecipeSearchModel";
+export * from "./RecipeSearchModelBase";
 export * from "./RecipeTeaser";
 export * from "./Tag";
 export * from "./Tags";

@@ -1,11 +1,6 @@
-import { Image, RecipeTeaser } from "./";
+import { Image, RecipeSearchModelBase } from ".";
 
-export interface RecipeSearchModel {
+export interface RecipeSearchModel extends RecipeSearchModelBase {
 	image: Image;
-	limit: number;
 	name: string;
-	offset: number;
-	query: string;
-	results: Array<RecipeTeaser>;
-	totalResults: number;
 }
