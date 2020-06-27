@@ -1,0 +1,19 @@
+{
+	"name": "svt-recept-api",
+	"version": "0.0.1",
+	"description": "For fetching data from SVT's recept API",
+	"main": "lib/index.js",
+	"scripts": {
+		"prepublish": "tsc"
+	},
+	"keywords": [
+		"recept",
+		"svt",
+		"api"
+	],
+	"author": "Mårten Åsberg",
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^3.9.5"
+	}
+}

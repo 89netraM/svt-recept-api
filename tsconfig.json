@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"declarationDir": "typings",
+		"outDir": "lib"
+	},
+	"include": [
+		"src/**/*.ts"
+	]
+}
