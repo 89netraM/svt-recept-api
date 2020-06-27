@@ -1,9 +1,20 @@
 import { IHttpWrapper } from "./HttpWrapper";
 
+/**
+ * Main class for all your recipe needs. A gateway to SVT's Recept API.
+ */
 export class SVTRecipesController {
-	private readonly httpWrapper: IHttpWrapper;
+	public static readonly defaultBaseURL: string = "https://program-recept-api.app.svt.se";
 
-	public constructor(httpWrapper: IHttpWrapper) {
+	private readonly httpWrapper: IHttpWrapper;
+	private readonly baseURL: string;
+
+	/**
+	 * @param httpWrapper The Http wrapper to use for Http requests.
+	 * @param baseURL     Use this base URL instead of the default one.
+	 */
+	public constructor(httpWrapper: IHttpWrapper, baseURL: string = SVTRecipesController.defaultBaseURL) {
 		this.httpWrapper = httpWrapper;
+		this.baseURL = baseURL;
 	}
 }
