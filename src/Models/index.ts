@@ -3,6 +3,8 @@ export * from "./ChefListModel";
 export * from "./FooterModel";
 export * from "./Image";
 export * from "./LinkModel";
+export * from "./Program";
+export * from "./ProgramListModel";
 export * from "./RecipeCategory";
 export * from "./RecipeListModel";
 export * from "./RecipeSearchModel";

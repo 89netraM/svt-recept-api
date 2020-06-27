@@ -1,5 +1,5 @@
 import { IHttpWrapper } from "./HttpWrapper";
-import { CategoriesController, ChefController, FooterController } from "./Controllers";
+import { CategoriesController, ChefController, FooterController, ProgramController } from "./Controllers";
 
 /**
  * Main class for all your recipe needs. A gateway to SVT's Recept API.
@@ -13,6 +13,7 @@ export class SVTRecipesController {
 	public readonly categories: CategoriesController;
 	public readonly chef: ChefController;
 	public readonly footer: FooterController;
+	public readonly program: ProgramController;
 
 	/**
 	 * @param httpWrapper The Http wrapper to use for Http requests.
@@ -25,5 +26,6 @@ export class SVTRecipesController {
 		this.categories = new CategoriesController(this.httpWrapper, this.baseURL);
 		this.chef = new ChefController(this.httpWrapper, this.baseURL);
 		this.footer = new FooterController(this.httpWrapper, this.baseURL);
+		this.program = new ProgramController(this.httpWrapper, this.baseURL);
 	}
 }
