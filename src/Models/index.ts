@@ -1,3 +1,5 @@
+export * from "./Chef";
+export * from "./ChefListModel";
 export * from "./Image";
 export * from "./RecipeCategory";
 export * from "./RecipeListModel";
